@@ -25,7 +25,9 @@ function ProfileScreen() {
                active:scale-90
                focus:outline-none focus:ring-2 focus:ring-white
                shadow-sm"
-        ></button>
+        >
+          Cerrar Sesion
+        </button>
       </SignOutButton>
     </div>
   );

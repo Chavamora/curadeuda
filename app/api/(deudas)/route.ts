@@ -1,13 +1,20 @@
 import { NextResponse } from "next/server";
 import { db } from "@/lib/firebase";
-import { collection, query, where, getDocs, addDoc } from "firebase/firestore";
+import {
+  collection,
+  query,
+  where,
+  getDocs,
+  addDoc,
+  DocumentData,
+} from "firebase/firestore";
 import { currentUser } from "@clerk/nextjs/server";
 
 export async function GET() {
   const user = await currentUser();
   const q = query(collection(db, "deudas"), where("userId", "==", user?.id));
   const querySnapshot = await getDocs(q);
-  let docs: any;
+  let docs: DocumentData[] = [];
   querySnapshot.forEach((doc) => {
     docs.push(doc.data());
   });

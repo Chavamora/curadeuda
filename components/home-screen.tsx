@@ -6,7 +6,7 @@ import { DebtCard } from "./debt-card";
 import { useRef } from "react";
 
 type Props = {
-  user: string;
+  user: string | null | undefined;
 };
 
 async function HomeScreen({ user }: Props) {

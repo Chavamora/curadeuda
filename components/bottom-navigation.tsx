@@ -8,26 +8,23 @@ import HomeScreen from "./home-screen";
 import CreateScreen from "./create-screen";
 import ProfileScreen from "./profile-screen";
 import { motion } from "framer-motion";
+import { useUser } from "@clerk/nextjs";
 
-type Props = {
-  currentUser: Promise<string>;
-};
-
-function BottomNavigation({ currentUser }: Props) {
-  const username = currentUser;
+function BottomNavigation() {
+  const user = useUser();
   const [activeTab, setActiveTab] = useState("home");
 
   const renderScreen = () => {
     switch (activeTab) {
       case "home":
-        return <HomeScreen user={username} />;
+        return <HomeScreen user={user.user?.username} />;
       case "Create":
         return <CreateScreen />;
       case "Profile":
         return <ProfileScreen />;
 
       default:
-        return <HomeScreen user={username} />;
+        return <HomeScreen user={user.user?.username} />;
     }
   };
   const handleClick = (section: string) => {

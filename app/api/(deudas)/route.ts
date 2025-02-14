@@ -7,7 +7,7 @@ export async function GET() {
   const user = await currentUser();
   const q = query(collection(db, "deudas"), where("userId", "==", user?.id));
   const querySnapshot = await getDocs(q);
-  const docs = [];
+  let docs: any;
   querySnapshot.forEach((doc) => {
     docs.push(doc.data());
   });

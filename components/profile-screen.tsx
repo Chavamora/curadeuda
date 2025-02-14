@@ -17,14 +17,16 @@ function ProfileScreen() {
         />
       </div>
 
-      <SignOutButton
-        className="w-full self-center justify-end relative overflow-hidden bg-gradient-to-r from-[#087d5a] to-[#00ce88] text-white font-semibold py-3 px-6 rounded-md 
+      <SignOutButton>
+        <button
+          className="w-full self-center justify-end relative overflow-hidden bg-gradient-to-r from-[#087d5a] to-[#00ce88] text-white font-semibold py-3 px-6 rounded-md 
                transition-all duration-200 
                hover:shadow-md hover:scale-[1.02]
                active:scale-90
                focus:outline-none focus:ring-2 focus:ring-white
-               shadow-sm "
-      />
+               shadow-sm"
+        ></button>
+      </SignOutButton>
     </div>
   );
 }

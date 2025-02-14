@@ -5,22 +5,6 @@ import React from "react";
 //   interestRate,
 //   dueDate,
 //   status,
-interface CreateFormProps {
-  createDebt: ({
-    creditor,
-    dueDate,
-    totalAmount,
-    remaining,
-    interestRate,
-  }: {
-    creditor: string;
-    dueDate: Date;
-    totalAmount: Number;
-    remaining: Number;
-    interestRate: Number;
-  }) => void;
-  clerkError: string;
-}
 
 const createDebt = async ({
   creditor,

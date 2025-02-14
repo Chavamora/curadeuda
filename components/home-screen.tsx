@@ -1,4 +1,3 @@
-"use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { Search } from "lucide-react";
@@ -57,7 +56,7 @@ async function HomeScreen({ user }: Props) {
         {!debt
           ? "no hay deuda"
           : debt.map((element) =>
-              element.map((d, index) => (
+              element.map((d: any, index: any) => (
                 <DebtCard
                   key={index}
                   creditor={d.creditor}

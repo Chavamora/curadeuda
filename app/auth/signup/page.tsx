@@ -7,7 +7,7 @@ import SignupForm from "@/components/signup-form";
 import VerifyForm from "@/components/verify-form";
 import { FormEvent } from "react";
 
-function page() {
+function Page() {
   // const [formData, setFormData] = useState({
   //   username: "",
   //   password: "",
@@ -85,4 +85,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

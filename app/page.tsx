@@ -16,7 +16,7 @@ export default function Home() {
             <UserButton afterSignOutUrl="/" />
             <Image
               className="mt-3 self-center"
-              src="/cura_deuda.webp"
+              src="/cura_deuda.png"
               width={250}
               height={100}
               alt="logo"

@@ -20,7 +20,7 @@ const SigninForm = ({ signInWithEmail, clerkError }: SignInFormProps) => {
     <>
       <Image
         className="mt-[4em] self-start ml-[-10]"
-        src="/cura_deuda.webp"
+        src="/cura_deuda.png"
         width={250}
         height={100}
         alt="logo"

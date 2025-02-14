@@ -3,7 +3,7 @@ import { useUser } from "@clerk/nextjs";
 import { SignOutButton } from "@clerk/nextjs";
 
 function ProfileScreen() {
-  const { isSignedIn, user, isLoaded } = useUser();
+  const { user } = useUser();
   return (
     <div className="w-full flex-col justify-around items-center pt-12 space-y-5 text-white">
       <div>

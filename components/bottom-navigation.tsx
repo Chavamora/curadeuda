@@ -3,8 +3,7 @@ import React from "react";
 import { HomeIcon } from "lucide-react";
 import { PlusCircleIcon } from "lucide-react";
 import { UserIcon } from "lucide-react";
-import { BookmarkIcon } from "lucide-react";
-import { use, useState } from "react";
+import { useState } from "react";
 import HomeScreen from "./home-screen";
 import CreateScreen from "./create-screen";
 import ProfileScreen from "./profile-screen";
@@ -23,9 +22,9 @@ function BottomNavigation({ currentUser }: Props) {
       case "home":
         return <HomeScreen user={username} />;
       case "Create":
-        return <CreateScreen user={username} />;
+        return <CreateScreen />;
       case "Profile":
-        return <ProfileScreen user={username} />;
+        return <ProfileScreen />;
 
       default:
         return <HomeScreen user={username} />;

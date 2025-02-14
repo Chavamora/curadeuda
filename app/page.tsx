@@ -5,8 +5,7 @@ import { useRouter } from "next/navigation";
 import { UserButton, useUser } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
 export default function Home() {
-  const { isSignedIn, user, isLoaded } = useUser();
-  const router = useRouter();
+  const { isSignedIn } = useUser();
   return (
     <>
       {isSignedIn ? (

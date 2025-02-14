@@ -1,5 +1,4 @@
 import { NextResponse } from "next/server";
-import { doc, getDoc } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import { collection, query, where, getDocs, addDoc } from "firebase/firestore";
 import { currentUser } from "@clerk/nextjs/server";

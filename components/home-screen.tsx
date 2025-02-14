@@ -1,8 +1,8 @@
+"use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { Search } from "lucide-react";
 import { DebtCard } from "./debt-card";
-import { p } from "framer-motion/client";
 import { useRef } from "react";
 
 type Props = {

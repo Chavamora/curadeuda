@@ -1,8 +1,6 @@
 "use client";
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+
 import React, { useState } from "react";
-import Link from "next/link";
 import { useSignUp } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 import SignupForm from "@/components/signup-form";

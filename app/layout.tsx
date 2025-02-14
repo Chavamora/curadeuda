@@ -1,17 +1,8 @@
 "use client";
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+
 import "./globals.css";
 import { Wifi, BatteryMedium } from "lucide-react";
-import {
-  ClerkProvider,
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
-  useUser,
-} from "@clerk/nextjs";
-import Link from "next/link";
+import { ClerkProvider } from "@clerk/nextjs";
 export default function RootLayout({
   children,
 }: {
